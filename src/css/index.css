@@ -1,0 +1,36 @@
+.body, html{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.scroll-container {
+    text-align: center;
+    /* padding: 20px;
+    position: relative; */
+}
+
+.iframe-container {
+    background-color: #000;
+    margin-bottom: 20px;
+    transition: width 0.9s, height 0.9s;
+    overflow: hidden;
+}
+
+.iframe-container{
+    width: 720px;
+    height: 520px;
+}
+
+.marquee {
+    width: 100%;              /* Set width to 100% */
+    overflow: hidden;         /* Hide overflow */
+    white-space: nowrap;      /* Prevent text wrapping */
+    position: relative;       /* Set position to relative */
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+    color: #BBBBBB;
+}

@@ -1,0 +1,65 @@
+{
+  "name": "redheartday_testsub",
+  "version": "0.1.0",
+  "private": true,
+  "hompage": "http://jueon-kim.github.io/Redheartdaytest/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@pmndrs/branding": "^0.0.8",
+    "@react-three/drei": "^9.109.2",
+    "@react-three/fiber": "^8.16.8",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tresjs/core": "^4.2.5",
+    "@tweenjs/tween.js": "^25.0.0",
+    "@types/react-responsive": "^8.0.8",
+    "@types/three": "^0.167.1",
+    "aos": "^2.3.4",
+    "gh-pages": "^6.1.1",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "jquery.marquee": "^1.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.2.1",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^6.26.0",
+    "react-scripts": "5.0.1",
+    "source-map-loader": "^5.0.0",
+    "swiper": "^11.1.9",
+    "three": "^0.167.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

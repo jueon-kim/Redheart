@@ -1,0 +1,151 @@
+
+
+.Title-Componet {
+  margin: 100px;
+  display: grid;
+  text-align: center;
+}
+.Main-Title  {
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 130px;
+  text-align: center;
+  color: #211714; /* Updated color */
+}
+
+.Sub-Title{
+  height: 46px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 46px;
+  text-align: center;
+  color: #666666; /* Updated color */
+}
+
+
+.view-More-Contetn{
+  text-align: center;
+}
+
+.view-More-Section{
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.BrandStory-360{
+  height: 720px;
+}
+
+.bg-color{
+  background-color: #cb0101;
+  padding: 50px 0;
+}
+
+
+.background-line{
+      /* position: absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.background-grid span{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 0.5px;
+  background: #eee
+  /* transition: background .7s; */
+}
+
+
+.background-grid span:nth-child(1){
+  right: -20%;
+}
+.background-grid span:nth-child(2){
+  right: 1px;
+}
+
+.background-grid span:nth-child(3){
+  right: 20%;
+}
+
+.background-grid span:nth-child(4){
+  right: 40%;
+}
+
+.background-grid span:nth-child(5){
+  right: 60%;
+}
+
+.background-grid span:nth-child(6){
+  right: 90%;
+}
+
+.background-grid span:nth-child(7){
+  right: 1px;
+}
+
+.background-grid span:nth-child(8){
+  right: -20%;
+}
+
+.background-line{
+  position: relative;
+  /* padding: 160rem 0 300rem; */
+  /* overflow: hidden; */
+}
+
+.background-grid{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.background-inner{
+  position: relative;
+  /* max-width: 1244rem; */
+  margin: 0 auto;
+
+}
+
+
+
+/* 화살표 아콘 */
+.react-icons{
+  color: #eee;
+}
+
+.OurValue-Table td{
+  align-content: center;
+}
+
+.OurValue-Table{
+  width: 90vw;
+  align-items: center;
+  height: 50rem;
+}
+
+.OurValue-Table{
+  border-bottom: #eee 1px solid;
+  border-top: #eee 1px solid;
+   
+}
+.OurValue-Table td:nth-child(1) {
+  border-right: #eee 1px solid;
+}
+
+.OurValue-Table td:nth-child(1),
+.OurValue-Table td:nth-child(2) {
+  border-bottom: #eee 1px solid;
+}

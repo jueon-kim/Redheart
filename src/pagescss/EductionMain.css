@@ -1,0 +1,91 @@
+.Eduction-Text-Componet{
+     text-align: center;
+}
+
+.Eduction-MainTitle{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 64px;
+    color: #211714;
+}
+
+.Eduction-SubTitle{
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #999999;
+
+
+}
+
+.Eduction-About{
+    background: #F6F6F6;
+    /* padding: 120px 240px; */
+}
+.EductionMain-Content {
+    background-image: url('/public/fadeinoutimg/eductionMain.jpg');
+    background-size: cover; /* 'contain' 대신 'cover' 사용 */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 배경 이미지 고정 */
+    background-position: center; /* 배경 이미지 위치 조정 */
+    position: relative; /* 배경 이미지와 텍스트를 상대적으로 위치시킴 */ 
+}
+
+.EductionMain-Text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh; /* 화면 높이에 맞춤 */
+    width: 100vw; /* 화면 너비에 맞춤 */
+    overflow: hidden; /* 스크롤바 숨김 */
+}
+
+.EductionMain-Text > p{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    /* color-white */
+    color: #FFFFFF;
+}
+
+.EductionMain-zoom-out{
+    width: 700px;
+    height: 700px;
+    background-size: contain; /* 'contain' 대신 'cover' 사용 */
+    background-repeat: no-repeat; 
+}
+
+.EductionMain-Content > .bg-color{
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.Eduction-Main-Image{
+    display: flex;
+    justify-content: center;
+}
+
+.Service-Componet{
+    display: flex;
+    justify-content: center;
+    color: #f6f6f6;
+    padding: 40px;
+}
+
+.Service-More{
+    padding: 15px 40px;
+    gap: 10px;
+    background: #211714;
+    border-radius: 60px;
+
+}
+
+.Service-QA{
+    padding: 15px 40px;
+    gap: 10px;
+    background: #CB0101;
+    border-radius: 60px;
+}
+

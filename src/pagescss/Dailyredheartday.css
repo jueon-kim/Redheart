@@ -1,0 +1,200 @@
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* 수평 스크롤 방지 */
+}
+
+.daily-container{
+}
+
+.Daily-Title-Componet{
+    text-align: center;
+}
+
+.Daily-Sub-Title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.Daily-Main-Title{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 86px;
+    color: #211714;
+
+}
+/* fadein-out */
+.Main-Image-Componet{
+    display: flex;
+    justify-content: center;
+}
+
+.Main-Image {
+    position: relative;
+    overflow: hidden;
+    height: 720px; /* 기본 높이 설정 */
+    width: 1040px; /* 전체 너비를 사용 */
+    transition: transform 0.5s ease-out; /* 스크롤 시 이미지 확대 애니메이션 */
+}
+
+.Main-Image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-out;
+}
+
+.Main-Image.scrolled img {
+    transform: scale(1.5); /* 스크롤 시 이미지 확대 */
+}
+
+
+.Main-Image-Size{
+    width: 1040px;
+    height: 674px;
+    /* display: flex; */
+    border-radius: 50px;
+}
+
+.Daily-Title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* min-width: 1920px; */
+    min-height: 744px;
+    background-color: #211714;
+}
+
+.Daily-Image-Componet{
+    padding: 120px 0px 210px;
+    background: #f6f6f6;    
+}
+
+.Daily-Main-Text{
+    font-size: 45px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.MainImage-Text {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+
+}
+/* 지금 바로 레드하트로 아름다운 사상 만들기 */
+.Image-Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+
+    width: 475px;
+    height: 62px;
+    background: #211714;
+    border-radius: 60px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #FFFFFF;
+
+}
+.Daily-Main-Image{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    background: #f6f6f6;
+}
+
+.Daily-Sub-Text{
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+}
+
+.Daily-Text{
+    text-align: center;
+}
+/* AOS Fade효과 */
+.daily-aos{
+    background-image: url('../../public/fadeinoutimg/Dailyredheart1.jpg');
+    background-size: cover; /* 'contain' 대신 'cover' 사용 */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 배경 이미지 고정 */
+    background-position: center; /* 배경 이미지 위치 조정 */
+    position: relative; /* 배경 이미지와 텍스트를 상대적으로 위치시킴 */ 
+}
+
+
+.aos-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh; /* 화면 높이에 맞춤 */
+    width: 100vw; /* 화면 너비에 맞춤 */
+    overflow: hidden; /* 스크롤바 숨김 */
+}
+
+
+.fade-in-element {
+    opacity: 0;
+    background-color: black;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in-element.visible {
+    opacity: 0.5;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.5; }
+}
+
+
+
+.aos-text > p {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    /* color-white */
+    color: #FFFFFF;
+}
+.Hashtag-Componet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.Hashtag{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 10px;
+    /* width: 240px;
+    height: 62px; */
+    background: #FFFFFF;
+    border-radius: 60px;
+    margin-left: 10px;
+
+    font-weight: 400;
+    font-size: 18px;
+}
+
+

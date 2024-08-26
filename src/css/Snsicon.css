@@ -1,0 +1,21 @@
+.Icon-Componet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.icon{
+    font-size: 33px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: 52px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 48px;
+
+}

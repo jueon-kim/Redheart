@@ -1,0 +1,67 @@
+.video{
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.Redheartday-image{
+    display: grid;
+    /* width: 100vw; */
+    /* height: 90vh; */
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.Fadeinout {
+    width: 1040px;
+    height: 674px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redheartdayimg{
+    width: 100vw;
+    height: 670px;
+}
+
+.Image-Title{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Image-MainTitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.Image-SubTtile{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+.Button-container{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.Button-space{
+    padding: 15px 40px;
+    width: 364px;
+    height: 62px;
+    background: #211714;
+    border-radius: 60px;
+    color: #f6f6f6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}

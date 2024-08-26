@@ -1,0 +1,81 @@
+/* @import url('https://rsms.me/inter/inter.css'); */
+
+
+svg {
+  /* fill: black; */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 0.5;
+  touch-action: none;
+  animation: fade-in 5s ease 1s forwards;
+}
+
+.Brandstory-Img{
+  height: 720px;
+
+  background-image: url('/public/brandImg/brandStoryMainimg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Img-Text{
+  text-align: center;
+  /* align-items: center; */
+  align-content: center;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  /* opacity: 0.5; */
+}
+
+.bgImg-Main-Text{
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 68px;
+  color: #FFFFFF;
+}
+
+.bgImg-Sub-Text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.Img-Slide{
+  margin: 50px;
+}
+
+.Img-Slide-Text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Slide-Main-Text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  color: #211714;
+
+}
+.Slide-Sub-Text{
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #444444;
+
+}

@@ -1,0 +1,264 @@
+.Ouractivity-Componet{
+    position: relative;
+    align-content: center;
+    background-color: #cb0101;
+    padding: 50px 0;
+    
+}
+  .swiper-slide {
+    text-align: center;
+    margin: 10px;
+  }
+.wrap {
+    align-items: center;
+    width: 100%;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 538px;
+    grid-row: 1;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    rotate:(.001deg);
+}
+
+.card img {
+    width: 100%;
+    height: 538px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 0.4s;
+}
+
+.front {
+    z-index: 1;
+    transform: rotateY(0deg);
+    border-radius: 10%;
+}
+/* 카드 뒷면  */
+.Festival {
+
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 226px; */
+    background: #211714;
+    border-radius: 24px;
+
+}
+
+.Education {
+    align-items: flex-start;
+    /* gap: 226px; */
+    background: #26AB51;
+    border-radius: 24px;
+}
+
+.Daliy{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    /* gap: 226px; */
+
+    background: #E73B52;
+    border-radius: 24px;
+}
+
+.People{
+    background: #1DB5C2;
+    border-radius: 24px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.Goods{
+    background: #2E2183;
+    border-radius: 24px;
+
+}
+.back {
+    width: 100%;
+    height: 538px;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+
+    display: grid;
+    align-items: center;
+    /* align-content: center; */
+    text-align: left;
+    justify-content: center;
+}
+
+.text-area{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    justify-content: center;
+}
+
+.Ouractivity-Main-Title{
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 130px;
+    text-align: center;
+    color: #FFFFFF;
+
+
+}
+.Ouractivity-Sub-Title{
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #F6F6F6;
+
+
+}
+
+/* 카드 뒷면  */
+.Card-Main-Title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.Card-Sub-Title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.Card-Sub-Title,.Card-Main-Title{
+    text-align: left;
+}
+.Card-Text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F4F4F4;
+}
+
+.Ouractivity-Text{
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #F4F4F4;
+}
+
+
+.open-card{
+    width: 100%;
+    height: 538px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+ul.open-card {
+    width: 100%;
+    height: 538px;
+    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+}
+
+
+li.open-card {
+    overflow: hidden;
+    width: 100%;
+    height: 538px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    transition: all 0.4s cubic-bezier(.63, .15, .03, 1.12);
+}
+
+li.open-card img {
+    width: 100%;
+    height: 538px;
+
+}
+
+li.open-card.card-1 {
+    z-index: 10;
+    transform: rotateZ(-20deg);
+}
+
+li.open-card.card-2 {
+    z-index: 9;
+    transform: rotateZ(-7deg);
+    transition-delay: 3s;
+}
+
+li.open-card.card-3 {
+    z-index: 8;
+    transform: rotateZ(5deg);
+    transition-delay: 2s;
+}
+
+li.open-card.card-4 {
+    z-index: 7;
+    transform: rotateZ(10deg);
+    transition-delay: 1s;
+}
+
+li.open-card.card-5 {
+    z-index: 6;
+    transform: rotateZ(15deg);
+    transition-delay: 0.5s;
+}
+
+li.open-card {
+    overflow: hidden;
+    width: 400px;
+    height: 538px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8); /* 카드 축소 상태 */
+    transition: transform 0.4s cubic-bezier(.63, .15, .03, 1.12);
+}
+ul.open-card.transition li.open-card {
+    transform: scale(1); /* 카드 기본 크기 */
+}
+
+ul.open-card.transition li.open-card.card-1 {
+    transform: translateX(-250px) scale(1); /* 좌측으로 이동 및 확대 */
+    z-index: 10;
+}
+
+ul.open-card.transition li.open-card.card-2 {
+    transform: translateX(-150px) scale(1);
+    z-index: 9;
+}
+
+ul.open-card.transition li.open-card.card-3 {
+    transform: translateX(-50px) scale(1);
+    z-index: 8;
+}
+
+ul.open-card.transition li.open-card.card-4 {
+    transform: translateX(50px) scale(1);
+    z-index: 7;
+}
+
+ul.open-card.transition li.open-card.card-5 {
+    transform: translateX(150px) scale(1);
+    z-index: 6;
+}
