@@ -23,7 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 node_modules
 
-
-# video
-/video
-*.mp4
