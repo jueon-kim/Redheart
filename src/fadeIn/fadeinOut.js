@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import '../css/fadeinout.css'
+import '../MQuery/MediaQueryTablet.css';
 
 
 const photos = {
@@ -40,13 +42,13 @@ const Fadeinout = ({ page }) =>{
             {currentphotos.map((photo, index) => (
                   <div
                   key={index}
-                  className={photo.className}
+                  className={`photo-container ${photo.className}`}  // photo-container 추가
                   style={{
                       backgroundImage: photo.backgroundImage,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
-                      width: '100%',
-                      height: '100%',
+                    //   width: '1244px',
+                    //   height: '660px',
                       borderRadius: '50px', 
                   }}
               >

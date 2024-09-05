@@ -1,9 +1,10 @@
-
+html, body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
 
 .Title-Componet {
-  margin: 100px;
-  display: grid;
-  text-align: center;
+  font-family: 'Agro';
 }
 .Main-Title  {
   font-weight: 400;
@@ -34,10 +35,6 @@
     justify-content: center;
 }
 
-
-.BrandStory-360{
-  height: 720px;
-}
 
 .bg-color{
   background-color: #cb0101;
@@ -149,3 +146,4 @@
 .OurValue-Table td:nth-child(2) {
   border-bottom: #eee 1px solid;
 }
+

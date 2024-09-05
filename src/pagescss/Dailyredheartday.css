@@ -1,31 +1,14 @@
-html, body {
-    min-height: 100vh;
-    min-width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* 수평 스크롤 방지 */
+.Daily-Componet{
+    padding: 50px 0px;
 }
 
-.daily-container{
-}
-
-.Daily-Title-Componet{
+.Daily-Text-Componet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 24px;
     text-align: center;
-}
-
-.Daily-Sub-Title{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: #999999;
-}
-
-.Daily-Main-Title{
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 86px;
-    color: #211714;
-
 }
 /* fadein-out */
 .Main-Image-Componet{
@@ -74,7 +57,7 @@ html, body {
 }
 
 .Daily-Main-Text{
-    font-size: 45px;
+    font-size: 5.5vw;
     line-height: 64px;
     color: #FFFFFF;
 }
@@ -109,19 +92,19 @@ html, body {
     justify-content: center;
     border-radius: 50px;
     background: #f6f6f6;
+    padding: 80px 0px 210px;
 }
 
 .Daily-Sub-Text{
-
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.5vw;
+    line-height: 1vw;
     color: #FFFFFF;
-
 }
+
 
 .Daily-Text{
     text-align: center;
+    padding: 6.5vw 0vw;
 }
 /* AOS Fade효과 */
 .daily-aos{
@@ -131,6 +114,7 @@ html, body {
     background-attachment: fixed; /* 배경 이미지 고정 */
     background-position: center; /* 배경 이미지 위치 조정 */
     position: relative; /* 배경 이미지와 텍스트를 상대적으로 위치시킴 */ 
+    border-radius: 50px;
 }
 
 
@@ -175,7 +159,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 5px 0px;
     margin: 0;
     list-style: none;
 }
@@ -185,16 +169,52 @@ html, body {
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    padding: 16px 24px;
-    gap: 10px;
-    /* width: 240px;
-    height: 62px; */
+    padding: 1.5vw 1.5vw;
+    /* gap: 10px; */
     background: #FFFFFF;
     border-radius: 60px;
     margin-left: 10px;
-
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.6vw;
+    /* border-radius: 25px; */
 }
 
+
+.daily-image-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+padding: 0px;
+gap: 24px;
+
+
+}
+
+.image-main-text{
+    font-family: 'SB AggroOTF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5vw;
+    line-height: 64px;
+    color: #211714;
+
+}
+.image-sub-text{
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5vw;
+    line-height: 32px;
+    color: #211714;
+}
+
+.Dailyredheartday-Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 

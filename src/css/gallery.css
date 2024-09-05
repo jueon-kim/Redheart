@@ -1,27 +1,24 @@
-/* 전체를 감싸는 div */
-.Gallery-Componet{
-}
 
 .grid-container {
     display: grid;
 }
 
 /* 내부 컨테이너 */
-.grid-innercontainer {
+/* .grid-innercontainer {
     width: 100vw;
     display: flex;
     justify-content: center;
-}
+} */
 
 /* 갤러리 컨테이너 */
 .gallery {
     justify-content: center;
     position: relative;
     display: grid;
-    overflow-y: auto; /* 스크롤을 위한 속성 */
-    grid-template-columns: repeat(3, 420px); /* 420px 컬럼 3개 */
-    grid-auto-rows: 670px; /* 기본 행 높이 */
-    gap: 5px; /* 행과 열 간격 */
+    overflow-y: auto;
+    grid-template-columns: repeat(3, 25.5vw);
+    grid-auto-rows: 40vw;
+    gap: 5px;
     margin-bottom: 100px;
 }
 
@@ -41,6 +38,7 @@
     height: 100%; /* 이미지가 차지하는 영역 전체 높이 */
     background-size: cover; /* 이미지가 전체를 덮도록 */
     background-position: center; /* 이미지가 가운데에 위치하도록 */
+    border-radius: 50px;
 }
 
 /* 첫 번째 이미지를 위한 클래스 */
@@ -48,3 +46,16 @@
     grid-row: 1; /* 첫 번째 행에 배치 */
     grid-column: span 3; /* 세 컬럼을 차지 */
 }
+/* Frame 418 */
+
+.gallery-main-text{
+    /* padding: 0px 9.5vw; */ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.5vw;
+    /* line-height: 64px; */
+    color: #211714;
+    /* text-align: start; */
+
+}
+

@@ -1,6 +1,52 @@
-/* .header-container{
-  min-width: 100vh;
-} */
+.header{
+  width: 100vw;
+}
+
+.menu{
+  /* width: 90vw; */
+}
+
+/* 헤더 컨테이너 */
+.header-container {
+  position: relative;
+  z-index: 10; /* 다른 페이지 요소들보다 앞에 위치하도록 설정 */
+  display: flex;
+  justify-content: center;
+}
+
+/* 메뉴 버튼 */
+.Menu-Button {
+  font-size: 24px; /* 아이콘 크기 */
+  background: none;
+  border: none;
+  color: #000; /* 버튼 텍스트 색상 */
+  cursor: pointer;
+  z-index: 1000; /* 메뉴보다 앞에 위치하게 설정 */
+}
+
+/* 메뉴 리스트 */
+.MenuList {
+  position: absolute;
+  top: 100%; /* 헤더 바로 아래에 메뉴 리스트가 나오도록 설정 */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999; /* 버튼보다 낮고, 다른 컨텐츠보다는 높은 위치 */
+  transition: max-height 0.3s ease-out;
+}
+
+/* 메뉴가 보여질 때 */
+.show-menu {
+  max-height: 500px; /* 메뉴가 펼쳐질 최대 높이 */
+  overflow: hidden;  /* 메뉴가 펼쳐질 때 overflow 방지 */
+}
+
+/* 메뉴가 숨겨질 때 */
+.hide-menu {
+  max-height: 0;
+  overflow: hidden;
+}
+
 
 .ul , li {
     list-style-type: none;
@@ -30,10 +76,11 @@
   width: 100%;
 }
 .header-list{
+  width: 90vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 0.1px #999 solid;
+
 }
 
 .button-list-menu{
@@ -44,6 +91,29 @@
     justify-content: space-between;
 }
 
+.Menu-Button {
+  font-size: 24px;  /* 아이콘 크기 */
+  background: none;
+  border: none;
+  color: #000; /* 버튼 텍스트 색상 */
+  cursor: pointer;
+  position: relative;
+  z-index: 1000; /* 메뉴보다 앞에 나오도록 설정 */
+}
+
+.Menu-Button:focus {
+  outline: none; /* 버튼 클릭 시 나오는 외곽선을 제거 */
+}
+
+/* 메뉴가 열렸을 때 */
+.Menu-Button.open {
+  color: #f00; /* 닫기 버튼의 색상을 변경 */
+}
+
+/* 메뉴가 닫혔을 때 */
+.Menu-Button.closed {
+  color: #000; /* 열기 버튼의 색상을 변경 */
+}
 
 /* 메뉴가 펼쳐졌을 때의 스타일 */
 .show-menu {
@@ -54,7 +124,7 @@
   overflow: visible; /* 내용이 넘칠 경우 보이도록 설정 */
   transition: max-height 2.5ms ease-out, opacity 2.5ms ease-out;
   transition: height 0.5s;
-  width: 170px;
+  /* width: 170px; */
 }
 /* 메뉴가 숨겨졌을 때의 스타일 */
 .hide-menu {
@@ -83,11 +153,6 @@
   display: none;
 }
 
-.menu{
-  width: 100%;
-}
-
-
 /* 헤더 폰트  */
 .Menu-Title{
   color: #211714;
@@ -108,13 +173,13 @@
 } 
 
 .Menu-Section{
-  border-left: 0.1px #999 solid; 
+  border: 0.1px #999 solid; 
   width: 100%;
   padding: 15px;
 }
 
 .Menu-Section-Small{
-  border-left: 0.1px #999 solid;
+  /* border: 0.1px #999 solid; */
   width: 50%;
 }
 
@@ -124,4 +189,17 @@
 
   width: 32px;
   height: 32px;
+}
+.show-menu {
+  max-height: 500px;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.hide-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
 }

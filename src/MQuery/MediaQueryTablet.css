@@ -1,0 +1,68 @@
+
+@media screen and (min-width: 768px) and (max-width: 1920px){
+  .html, .body{
+    min-width: 100vw;
+  }
+
+
+}
+@media screen and (min-width: 360px) and (max-width: 620px) {
+    
+    .OurValue-Main-Title{
+        font-weight: 400;
+        line-height: 44px;
+    }
+    
+    .OurValue-Sub-Title {
+        font-weight: 500;
+        line-height: 24px;
+    
+    }
+    .open-card, .open-card img{
+      width: 30vw;
+      height: 12rem;
+
+  }
+
+
+    .back-title-wapper {
+      display: grid;
+  }
+}
+
+
+
+@media screen and (min-width: 621px) and (max-width: 767.5px) {
+  .html, .body{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+    .main-title{
+    font-weight: 400;
+    line-height: 120%;
+
+    }
+    
+    .OurValue-Main-Title{
+        font-weight: 400;
+        line-height: 44px;
+    }
+    
+    .OurValue-Sub-Title {
+        font-weight: 500;
+        line-height: 24px;
+    
+    }
+    .open-card, .open-card img{
+      width: 23vw;
+      height: 14rem;
+    }
+
+
+    .back-title-wapper {
+      display: grid;
+  }
+
+}

@@ -1,0 +1,146 @@
+/* @import url('https://rsms.me/inter/inter.css'); */
+
+
+.BrandStory-360 {
+  position: relative;
+  width: 100vw;
+  height: 120vh; /* Canvas의 전체 높이 설정 */
+}
+
+.canvas-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  height: auto;
+
+  width: 95vw;  /* 캔버스의 너비 */
+  height: 95vh; /* 캔버스의 높이 */
+}
+
+.title-wapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* 배너 스타일링 */
+.banner-container {
+  position: absolute;
+  width: 95vw; /* 배너의 너비 */
+  height: auto; /* 높이 자동 조정 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* 중앙 정렬 */
+  z-index: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 부모 요소를 Flexbox 컨테이너로 설정 */
+.view-More-Page {
+  display: flex;               /* Flexbox 컨테이너로 설정 */
+  justify-content: center;     /* 수평 중앙 정렬 */
+  align-items: center;         /* 수직 중앙 정렬 */
+  padding: 2.5vw;
+}
+
+/* Link 스타일링 */
+.view-more {
+  display: flex;               /* Link를 Flexbox 컨테이너로 설정 */
+  align-items: center;         /* Link 내의 내용들을 수직 중앙 정렬 */
+  color: #BBBBBB;
+}
+
+.right-icon {
+  margin-left: 8px;            /* 아이콘과 텍스트 사이의 간격 조정 */
+  display: flex;               /* 아이콘을 Flexbox 컨테이너로 설정 (옵션) */
+  align-items: center;         /* 아이콘을 수직 중앙 정렬 (옵션) */
+}
+
+
+canvas {
+  opacity: 0.5;
+  touch-action: none;
+  animation: fade-in 5s ease 1s forwards;
+}
+
+.Brandstory-Img{
+  height: 720px;
+
+  background-image: url('/public/brandImg/brandStoryMainimg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Img-Text{
+  text-align: center;
+  /* align-items: center; */
+  align-content: center;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  /* opacity: 0.5; */
+}
+
+.bgImg-Main-Text{
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 68px;
+  color: #FFFFFF;
+}
+
+.bgImg-Sub-Text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.Img-Slide{
+  margin: 50px;
+}
+
+.Img-Slide-Text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Slide-Main-Text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  color: #211714;
+
+}
+.Slide-Sub-Text{
+  font-family: 'Pretendard';
+  font-style: normal;
+  /* font-weight: 700; */
+  font-size: 20px;
+  line-height: 32px;
+  color: #444444;
+
+}
+
+.Brandstory-cicle{
+  border-radius: 10px;
+}
+
+.Brandstory-bg-line > span{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: black
+}
+

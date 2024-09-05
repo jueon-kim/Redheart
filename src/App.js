@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom';
 
 //컴포넌트
 import Header from './component/Header';
-import ScrollResizeComponent from './component/video';
-import Conten from './component/MarqueeComponet';
-import { BrandStoryHome } from './component/\bBrandStory';
+import { BrandStoryComponet } from './component/BrandStoryComponet';
 import OurActivityComponet from './component/OuractivityComponet';
 import OurValue from './component/OurValue';
 import Footer from './component/Footer';
+import RedheartdayComponet from './component/RedheartdayComponet';
 
 import ScrollToTop from './ScrollToTop';
 
@@ -28,6 +27,7 @@ import './css/App.css';
 import './FontAgro.css';
 import './css/Reset.css';
 import './css/index.css';
+
 // import './css/Header.css';
 // import './css/Footer.css';
 // import './css/OuractivityComponet.css';
@@ -37,34 +37,10 @@ import './css/index.css';
 function HomePage() {
   return (
     <>
-      <div className='Title-Componet'>
-        <p className='Sub-Title'>I have two. I share one.</p>
-        <p className='Main-Title'>1221 REDHEARTDAY</p>
-      </div>
+      <RedheartdayComponet />
       
-      <ScrollResizeComponent />
-      <Conten />
-
-      <div className='Title-Componet'>
-        <p className='Main-Title'>BrandStory</p>
-        <p className='Sub-Title'>우리의 레드하트데로 세상을 따뜻하게!</p>
-       
-     
-      <div className="view-More-Content">
-          <div className="view-More-Page">
-            <Link to='/Brandstory' className="view-More" style={{ textDecoration: "none" }}>view More 
-             
-            </Link>
-            <FaCircleChevronRight className='react-icons'/>
-          </div>
-        </div>
-
-        </div>
-
-      <div className='BrandStory-360'>
-        <BrandStoryHome />
-      </div>
-      <div style={{ height:'20vh' }}></div>
+        <BrandStoryComponet />
+    
       <OurValue />
       <OurActivityComponet />
     </>

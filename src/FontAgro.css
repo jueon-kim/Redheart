@@ -1,14 +1,12 @@
 @font-face {
-    font-family: 'AgroLage';
-    src: url(./font/SB\ 어그로\ B.ttf);
+    font-family: 'Agro';
+    src: url(./font/SB\ 어그로\ M.ttf);
   }
-  
-
 
   .body, * {
-    font-family: 'AgroLage' !important;
+    font-family: 'Agro' !important;
   }
  
   .element{
-    font-family: 'AgroLage';
+    font-family: 'Agro';
   }

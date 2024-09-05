@@ -1,54 +1,89 @@
-.Ourvalue {
-    background-color: #cb0101;
-    padding: 50px 0;
+.ourvalue-wapper{
+    /* height: 1200px; */
 }
 
-.Title-Componet-Main{
+.text-wapper{
+    height: 105.5vh;
+
+}
+.display-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ourvalue-wapper {
+    background-color: #cb0101;
+}
+
+/* .main-title{
     font-weight: 400;
     font-size: 110px;
     line-height: 130px;
     text-align: center;
-    color: #FFFFFF;
-}
+} */
 
-.Title-Componet-Sub{
-    font-weight: 700;
+/* .sub-title{
+    font-style: normal;
+    font-weight: 130;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: #F6F6F6;
+} */
+.ourvalue-main-text, .ourvalue-sub-text,
+.OurValue-Main-Title, .OurValue-Sub-Title{
+    color: #f6f6f6; 
 
 }
-
 .OurValue-Main-Title {
-    height: 68px;
+    height: 7.5;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 6vw;
+    /* line-height: 68px; */
     text-align: center;
-    color: #f6f6f6;
 }
 
 .OurValue-Sub-Title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
-    color: #f6f6f6;
-}
+    font-size: 1.5vw;
 
+}
 .OurValue-Text {
     text-align: center;
-    align-content: center;
+    /* align-content: center; */
 }
 
 .OurValue-Componet {
-    height: 720px;
+    height: 95.5vh;
+    width: 100vw;
     align-items: center;
     display: grid;
     justify-content: center;
-    grid-gap: 50px;
+    text-align: center;
+    border-top: 0.5px #EEEEEE solid;
+    border-bottom: 0.5px #EEEEEE solid;
+    grid-auto-columns: 50vw;
+}
+.vertical-line{
+    width: 0.2px;
+    height: 95.5vh;
+    color: #EEEEEE;
+    position: absolute;
+    z-index: 1;
+    outline: double;
+    outline-width: 0.5px;
+    left: 50%;
 }
 
+.horizontal-line{
+    width: 95.5vw;
+    height: 0.2px;
+    color: #EEEEEE;
+    position: absolute;
+    z-index: 1;
+    outline: double;
+    outline-width: 0.5px;
+    left: 1.5%;
+}
 .OurValue-Love {
     grid-row: 1;
     grid-column: 1;
@@ -68,3 +103,4 @@
     grid-row: 2;
     grid-column: 2;
 }
+

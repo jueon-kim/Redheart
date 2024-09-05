@@ -1,97 +1,286 @@
-html, body {
-    overflow-x: hidden; /* 수평 스크롤 방지 */
-}
-.Img-Slide{
-    margin: 50px;
-}
-
-.BrandStoryMain-Content {
-    background-image: url('../../public/brandImg/brandStoryMainimg.jpg');
-    background-size: cover; /* 'contain' 대신 'cover' 사용 */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* 배경 이미지 고정 */
-    background-position: center; /* 배경 이미지 위치 조정 */
-    position: relative; /* 배경 이미지와 텍스트를 상대적으로 위치시킴 */ 
+/* 전체 컨테이너 */
+.Brandstory-video {
+    position: relative; /* 자식 요소들을 기준으로 위치를 설정 */
+    width: 100vw; /* 전체 너비 */
+    height: 100vh; /* 전체 높이 */
+    overflow: hidden; /* 비디오가 넘치는 부분 숨기기 */
 }
 
-.BrandStoryMain-Text {
-    justify-content: center;
-    
-    height: 100vh; /* 화면 높이에 맞춤 */
-    width: 100vw; /* 화면 너비에 맞춤 */
-    overflow: hidden; /* 스크롤바 숨김 */
-    display: grid;
-    place-content: center;
+/* 비디오 래퍼 */
+.video-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 비디오 스타일 */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 비디오 너비 */
+    height: 100vh; /* 비디오 높이 */
+    object-fit: cover; /* 화면을 덮도록 비디오 크기 조정 */
+    z-index: -1; /* 비디오를 콘텐츠 뒤로 이동 */
 }
 
-.BrandStoryMain-Text > p{
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 54px;
+/* 텍스트 섹션 스타일 */
+.text-section {
+    position: relative; /* 비디오 위에 위치하도록 설정 */
+    color: white; /* 텍스트 색상 조정 */
+    padding: 20px; /* 여백 조정 */
+    text-align: center; /* 텍스트 정렬 */
+    /* 필요에 따라 높이 조정 */
+    max-height: 100rem; /* 화면 높이를 넘지 않도록 설정 */
+    overflow-y: auto; /* 필요시 스크롤이 가능하도록 설정 */
+}
+
+
+
+
+.second-video-section video {
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+.brandstory-component, .dresscode-wrapper, .ouractivity-bg-color {
+    position: relative;
+    z-index: 1; /* 이 요소들이 비디오 위에 있도록 설정 */
+}
+
+
+/* 두 번째 비디오 섹션 스타일 */
+.second-video-section {
+    position: relative;
+    padding: 50px 0; /* 비디오 섹션과 다른 요소 간의 간격 조정 */
     text-align: center;
-    /* color-white */
+}
+
+.second-video {
+    width: 90vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+/* 기타 스타일 */
+.brandstory-wrapper {
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.brandstory-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* 추가 스타일 */
+
+
+.text-section {
+    /* position: absolute; */
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+
+/* 기타 스타일 */
+.brandstory-wrapper {
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.brandstory-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+.brandstory-componet {
+    position: relative;
+}
+
+.brand-story-wrapper {
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* 동영상이 다른 요소들과 겹치지 않도록 */
+.video-section {
+    position: relative;
+    height: 100vh; /* 섹션의 높이를 화면 높이로 설정 */
+    overflow: hidden;
+}
+/* BrandstoryMain.css */
+
+.brandstory-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 텍스트 스타일 */
+.BrandStoryMain-Text  {
+    font-size: 5.5vw;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    height: 100rem;
+    color: white;
+    overflow: hidden;
+}
+
+/* 반응형 이미지 스타일 */
+.brandstory-gallery-img {
+    border-radius: 10px;
+}
+
+/* 미디어 쿼리 적용 전용 */
+.ouractivity-bg-color {
+    background-color: #f6f6f6;
+}
+
+/* 기타 스타일 */
+.brandstory-title-componet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.brandstory-sub-title > p {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 15.5vw;
+    text-align: center;
     color: #FFFFFF;
 }
 
-.BrandStoryMain-zoom-out{
-    width: 700px;
-    height: 700px;
-    background-size: contain; /* 'contain' 대신 'cover' 사용 */
-    background-repeat: no-repeat; 
-}
-/* 전체를 감싸는 컨테이너 */
-.Brandstory-Gallery-Group {
-    display: flex;
-    flex-direction: column; /* 세로로 정렬 */
-    /* gap: 4rem; 위아래 간격 */
-    margin: 40px;
+.brandstory-main-title > p {
+    font-weight: 400;
+    font-size: 6.5vw;
+    line-height: 12.5vw;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-/* 가운데에 들어갈 3개 섹션을 감싸는 컨테이너 */
+.dresscode-wapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dresscode-componet {
+    display: flex;
+    justify-content: center;
+}
+
+.dresscode-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.dresscode-main-text > p {
+    font-weight: 400;
+    font-size: 4.5vw;
+    line-height: 15vw;
+    text-align: center;
+    color: #211714;
+}
+
+.dresscode-sub-text > p {
+    font-weight: 700;
+    font-size: 2.5vw;
+    line-height: 13.5vw;
+    color: #444444;
+    margin-left: 5.5px;
+}
+
+.gallery-text-componet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0px 120px;
+    gap: 26px;
+}
+
+.gallery-text-small {
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 32px;
+}
+
+.gallery-sub-text {
+    font-weight: 500;
+    font-size: 2.5vw;
+    line-height: 44px;
+    text-align: center;
+    color: #444444;
+}
+
+.BrandStoryMain-zoom-out {
+    width: 700px;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Brandstory-Gallery-Group {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0px;
+}
+
 .Brandstory-Gallery-Center {
     display: flex;
-    justify-content: center; /* 왼쪽, 가운데, 오른쪽 섹션 사이에 공간 확보 */
-    gap: 1rem; /* 각 섹션 간의 간격 */
-    margin: 10px;
+    justify-content: center;
+    gap: 5.5px;
+    margin: 5.5px;
 }
 
 .Brandstory-Gallery-Middle {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* 이미지 간의 간격 */
+    gap: 5.5px;
 }
 
-/* 같은 줄에 있는 이미지를 감싸는 컨테이너 */
 .Brandstory-Gallery-Middle-Row {
     display: flex;
-    gap: 1rem; /* 이미지 간의 간격 */
+    gap: 1rem;
 }
 
-/* 왼쪽 섹션 */
 .Brandstory-Gallery-Left {
     align-items: end;
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* 이미지 간의 간격 */
+    gap: 1rem;
 }
 
-/* 가운데 섹션 */
-.Brandstory-Gallery-Middle {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; /* 이미지 간의 간격 */
-}
-
-/* 오른쪽 섹션 */
 .Brandstory-Gallery-Right {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* 이미지 간의 간격 */
+    gap: 1rem;
 }
 
-/* 아래쪽 섹션 */
 .Brandstory-Gallery-Bottom {
     display: flex;
-    justify-content: center; /* 이미지가 가운데로 정렬되도록 설정 */
-    gap: 1rem; /* 이미지 간의 간격 */
+    justify-content: center;
+    gap: 1rem;
 }

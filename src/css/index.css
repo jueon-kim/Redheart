@@ -1,8 +1,3 @@
-.body, html{
-    height: 100vh;
-    width: 100vw;
-}
-
 
 .scroll-container {
     text-align: center;
@@ -18,8 +13,8 @@
 }
 
 .iframe-container{
-    width: 720px;
-    height: 520px;
+    width: 30rem;
+    height: 40rem;
 }
 
 .marquee {
@@ -33,4 +28,8 @@
     font-size: 34px;
     line-height: 46px;
     color: #BBBBBB;
+}
+
+.Marquee-Text{
+    word-spacing: 2.8vw;
 }

@@ -3,7 +3,14 @@
     display: flex;
     justify-content: center;
 }
-
+.Ouractivity-Text-Componet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 24px;
+    text-align: center;
+}
 
 .Ouractivity-Image{
     display: flex;
@@ -12,19 +19,23 @@
     align-items: center;
 }
 .Ouractivity-Title{
+    padding: 60px;
+}
+.Ouractivity-Title > p{
     text-align: center;
-    padding: 160px 0px 0px;
+
 }
 .Our-Sub-Title{
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 32px;
     color: #999999;
 }
 
 .Our-Main-Title{
     font-weight: 400;
-    font-size: 64px;
+    font-size: 3rem;
     line-height: 86px;
     color: #211714;
 }
+
+

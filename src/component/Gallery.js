@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import '../css/gallery.css';
 import PeopleWithRedHeart from "../OurActivity";
+import '../MQuery/MediaQueryTablet.css';
 
 const photos = {
     redheartday: [
@@ -163,6 +164,7 @@ const Gallery = ({ page }) => {
     return (
         <div className="gallery">
             {currentphotos.map((photo, index) => (
+
                 <div
                     key={index}
                     className={photo.className}
@@ -171,9 +173,14 @@ const Gallery = ({ page }) => {
                         backgroundImage: photo.backgroundImage,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
+                        borderRadius: '15px'
                     }}
-                />
+                >
+                    
+                </div>
+
             ))}
+            
         </div>
     );
 }

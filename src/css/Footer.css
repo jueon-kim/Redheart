@@ -2,7 +2,7 @@
 
 /* footer */
 .footer{
-    width: 100%;
+    width: 100vw;
     height: 150px;
     position: relative;
     background-color: #211714;
@@ -11,20 +11,36 @@
   }
   
   .Footer-List{
+    width: 100vw;
     height: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
   }
-  
+
+ .bottom-text{
+  font-family: 'SB AggroOTF';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  color: #999999;
+
+ } 
+
+ .Logo{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
   .Footer-Text{
-    width: 400px;
     align-content: center;
   }
   
-  .Logo-Icon{
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .Instagram-Logo, .Youtube-Logo{
+    font-size: 30px;
   }
-
