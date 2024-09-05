@@ -41,7 +41,7 @@ const Brandstory = () => {
        
 
             <div className='text-section'>
-                <span className='text-section-bg'>>
+                <span className='text-section-bg'>
                     <div data-aos="fade-up" className='BrandStoryMain-Text'>
                         <p>RedHeartDay는 나의 따뜻한</p>
                         <p>마음을 나타내며 전하는</p>
