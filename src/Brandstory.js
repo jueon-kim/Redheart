@@ -41,7 +41,6 @@ const Brandstory = () => {
        
 
             <div className='text-section'>
-                <span className='text-section-bg'>
                     <div data-aos="fade-up" className='BrandStoryMain-Text'>
                         <p>RedHeartDay는 나의 따뜻한</p>
                         <p>마음을 나타내며 전하는</p>
@@ -70,7 +69,7 @@ const Brandstory = () => {
                     <div data-aos="fade-up" className='BrandStoryMain-Text'>
                         <p>나눔을 통해 웃음과 기쁨이</p>
                         <p>두 배가 되는 날</p>
-                    </div>            </span>
+                    </div>            
             </div>
 
             </div>
