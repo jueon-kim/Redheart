@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Gallery from './component/Gallery';
 import AOS from 'aos';
 import Snsicon from './component/Snsicon';
-import Fadeinout from './fadeIn/fadeinOut';
 import ResizableContainer from './component/RasizableContainer';
 
 import './pagescss/Dailyredheartday.css';
@@ -12,7 +11,6 @@ import 'aos/dist/aos.css';
 import './css/App.css';
 import './FontAgro.css';
 import './css/Reset.css';
-import './pagescss/fadeinout.css';
 import './MQuery/MediaQueryTablet.css';
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -50,7 +48,6 @@ const Daily = () => {
                     alignItems: 'center' 
                 }}>
                     <img 
-                        src={process.env.PUBLIC_URL + '/fadeinoutimg/Dailyredheart1.jpg'} 
                         style={{ 
                             maxHeight: '100%', 
                             objectFit: 'cover' 
@@ -138,7 +135,6 @@ const Daily = () => {
                            
                     
                     <div className='Dailyredheartday-Img'>
-                        <img src={process.env.PUBLIC_URL + '/fadeinoutimg/Dailyredheart2.jpg'} style={ {width: '90vw', borderRadius: '15px' } }></img>
                     </div>
 
                     
