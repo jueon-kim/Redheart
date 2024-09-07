@@ -44,20 +44,6 @@
     justify-content: center;
     align-items: center;
 }
-.redheartday-img-container{
-    display: flex; 
-    justify-Content: center; 
-    align-Items: center;
-}
-
-.redheartday-fade{ 
-
-    background-image: url('../../public/redheartdayimg/Redheartday-fade.jpg');
-    background-repeat: no-repeat;
-
-    max-height: 100vw;
-    object-fit: cover;
-}
 
 
 

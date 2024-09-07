@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 //컴포넌트
 import Header from './component/Header';
-import { BrandStoryComponet } from './component/BrandStoryComponet';
+import BrandStoryComponet from './component/BrandStoryComponet';
 import OurActivityComponet from './component/OuractivityComponet';
 import OurValue from './component/OurValue';
 import Footer from './component/Footer';
@@ -28,10 +28,6 @@ import './FontAgro.css';
 import './css/Reset.css';
 import './css/index.css';
 
-// import './css/Header.css';
-// import './css/Footer.css';
-// import './css/OuractivityComponet.css';
-// import './css/gallery.css';
 
 
 function HomePage() {

@@ -67,7 +67,7 @@ const OurActivityComponet = () => {
                     </div>
 
                     <div className='sub-title ouractivity-sub-title'>
-                        <p>레드하트는 이미 저희 일상 속에 확산되고 있습니다</p>
+                        <p>‘REDHEART’ is already spreading in our daily lives.</p>
                     </div>
                 </div>
 
@@ -105,7 +105,7 @@ const OurActivityComponet = () => {
                                 <div className='front'>
                                 <div className='front-section'>
                                 <p className='Card-Sub-Title'>Festival</p>
-                                        <p className='Card-Main-Title'>1221 레드하트데이</p>
+                                        <p className='Card-Main-Title'>1221 REDHEART Day</p>
                                         </div>
                                     </div>
                                 </div>
@@ -115,14 +115,17 @@ const OurActivityComponet = () => {
                                     <div className='back-title-wapper'>
                                       <div className='back-section'>
                                         <p className='Card-Sub-Title'>Festival</p>
-                                        <p className='Card-Main-Title'>1221 레드하트데이</p>
+                                        <p className='Card-Main-Title'>1221 REDHEART Day</p><br/><br/>
                                      </div>
 
                                       <div className="text-area">
-                                           <p className='Card-Text'>12월 21일, 레드하트데이!</p>
-                                            <p className='Card-Text'>나눔으로 웃음과 기쁨이 두 배가 되는</p>
-                                            <p className='Card-Text'>축제의 날. 1221 RED HEART DAY.</p>
-                                            <p className='Card-Text'>가족, 친구 이웃과 함께 즐겨요</p>
+                                           <p className='Card-Text'>
+                                                    December 21st is RedHeart Day!
+                                                    Celebrate the Day of Sharing with
+                                                    your family, friends and neighbors.
+                                                    Sharing DOUBLES the Happiness 
+                                                    and Joy.
+                                                    </p>
                                       </div>
                                    
                                       
@@ -131,7 +134,7 @@ const OurActivityComponet = () => {
                                        
                                     </div>
 
-                                    <div className='card-bottom'>
+                                    {/* <div className='card-bottom'>
                                             <div className='Card-Text'>
                                                 <p> <Link to='/Redheartday' className="Ouractivity-Text">View More</Link></p>
                                             </div>
@@ -139,7 +142,7 @@ const OurActivityComponet = () => {
                                             <div className='right-icon'>
                                             <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
                                             </div>
-                                        </div>
+                                        </div> */}
                                        
                                         </div>
                                 </div>
@@ -158,7 +161,7 @@ const OurActivityComponet = () => {
                                   <div className='front'>
                                   <div className='front-section'>
                                   <p className='Card-Sub-Title'>Education</p>
-                                    <p className='Card-Main-Title'>유치원 교육수업</p>
+                                    <p className='Card-Main-Title'>Preschool Edu</p>
                                       </div>
                                     </div>
                                     <div className="Education back">
@@ -166,19 +169,20 @@ const OurActivityComponet = () => {
                                    <div className='back-title-wapper'>
                                    <div className='back-section'>
                                    <p className='Card-Sub-Title'>Education</p>
-                                      <p className='Card-Main-Title'>유치원 교육수업</p>
+                                      <p className='Card-Main-Title'>Preschool Edu</p><br/><br/>
                                     </div>
                                        
                                      <div className="text-area">
-                                        <p className='Card-Text'>레드하트 데이는 우리 아이들의 교육현장에도</p>
-                                        <p className='Card-Text'>나눔의 문화를 가르칩니다 나의 것을 나누고,</p>
-                                        <p className='Card-Text'>사랑의 나눔을 실천하는 행동을 가르쳐 주고</p>
-                                        <p className='Card-Text'>지도 합니다</p>
+                                        <p className='Card-Text'>
+                                            We have a RedHeart Day<br/> Class held in many countries, 
+                                            teaching the joy of sharing through well-organized 
+                                            class activities and class materials.
+                                        </p>
                                     </div>
                                    
                                 
                                         </div>
-
+{/* 
                                         <div className='card-bottom'>
                                             <div className='Card-Text'>
                                                 <p> <Link to='/Eduction' className="Ouractivity-Text">View More</Link></p>
@@ -188,7 +192,7 @@ const OurActivityComponet = () => {
                                             <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
 
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                     </div>
                                 </div>
@@ -209,7 +213,7 @@ const OurActivityComponet = () => {
                                 <div className='front'>
                                 <div className='front-section'>
                                 <p className='Card-Sub-Title'>Daliy</p>
-                                        <p className='Card-Main-Title'>레드하트 일상나눔</p>
+                                        <p className='Card-Main-Title'>Daily REDHEART</p>
                                       </div>
                                     </div>
 
@@ -218,17 +222,17 @@ const OurActivityComponet = () => {
                                     <div className='back-title-wapper'>
                                     <div className='back-section'>
                                     <p className='Card-Sub-Title'>Daliy</p>
-                                        <p className='Card-Main-Title'>레드하트 일상나눔</p>
+                                        <p className='Card-Main-Title'>Daily REDHEART</p><br/><br/>
                                       </div>
 
                                         <div className="text-area">
-                                            <p className='Card-Text'>레드하트는 이미 저희 일상 속에서</p>
-                                            <p className='Card-Text'>확산되고 있습니다.행복을 배가시키는</p>
-                                            <p className='Card-Text'>나의 일상을 모두와 나누어 보세요.</p>
+                                            <p className='Card-Text'>
+                                                ‘REDHEART’ is already<br></br> spreading in our daily lives.<br></br> 
+                                                Share the story of sharing with everyone.</p>
                                         </div>
                                       
                                         </div>
-                                        <div className='card-bottom'>
+                                        {/* <div className='card-bottom'>
                                             <div className='Card-Text'>
                                                 <p>  <Link to='/Dailyredheartday' className='Ouractivity-Text'>view More</Link></p>
                                             </div>
@@ -236,7 +240,7 @@ const OurActivityComponet = () => {
                                             <div className='right-icon'>
                                             <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
                                             </div>
-                                        </div>
+                                        </div> */}
                                        
                                     </div>
                                 </div>
@@ -254,8 +258,10 @@ const OurActivityComponet = () => {
                                         alt="Front"
                                     />
                                   <div className='front'>
-                                  <div className='front-section'>                                  <p className='Card-Sub-Title'>People</p>
-                                        <p className='Card-Main-Title'>참여하는 사람들</p>
+                                  <div className='front-section'>                                  
+                                        <p className='Card-Sub-Title'>People</p>
+                                        <p className='Card-Main-Title'>People with 
+                                        REDHEART</p>
                                       </div>
                                     </div>
 
@@ -265,20 +271,18 @@ const OurActivityComponet = () => {
 
                                     <div className='back-section'>                                
                                          <p className='Card-Sub-Title'>People</p>
-                                        <p className='Card-Main-Title'>참여하는 사람들</p>
+                                        <p className='Card-Main-Title'>People with 
+                                        REDHEART</p><br/><br/>
                                       </div>
 
                                         <div className="text-area">
-                                            <p className='Card-Text'>따뜻한 마음을 가진 레드하트의 주역들!</p>
-                                            <p className='Card-Text'>레드하트의 나눔 운동을 활발히 실천하는</p>
-                                            <p className='Card-Text'>인플루언서와 기업들의 이야기를</p>
-                                            <p className='Card-Text'>만나보세요!</p>
+                                            <p className='Card-Text'>The warm-hearted stars of RedHeart! Meet our HEROS! </p>
                                         </div>
 
                                       
                                      
                                         </div>
-                                        <div className='card-bottom'>
+                                        {/* <div className='card-bottom'>
                                             <div className='Card-Text'>
                                                 <p> <Link to='/Ouractivity' className="Ouractivity-Text">View More</Link></p>
                                             </div>
@@ -286,7 +290,7 @@ const OurActivityComponet = () => {
                                             <div className='right-icon'>
                                             <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
                                             </div>
-                                            </div> 
+                                        </div> */}
                                         </div>
 
                                      
@@ -309,7 +313,7 @@ const OurActivityComponet = () => {
                                 <div className='front'>
                                     <div className='front-section'>
                                         <p className='Card-Sub-Title'>Goods</p>
-                                        <p className='Card-Main-Title'>레드하트 굿즈</p>
+                                        <p className='Card-Main-Title'>REDHEART Goods</p>
                                       </div>
                                     </div>
 
@@ -318,17 +322,16 @@ const OurActivityComponet = () => {
                                     <div className='back-title-wapper'>
                                     <div className='back-section'>                                
                                         <p className='Card-Sub-Title'>Goods</p>
-                                        <p className='Card-Main-Title'>레드하트 굿즈</p>
+                                        <p className='Card-Main-Title'>REDHEART Goods</p><br/><br/>
                                       </div>
 
                                         <div className="text-area">
-                                            <p className='Card-Text'>레드하트 굿즈를 통해 레드하트 정신을</p>
-                                            <p className='Card-Text'>더욱 확산시켜 주세요</p>
+                                            <p className='Card-Text'>Express and spread your RedHeart!</p>
                                         </div>
                                       
                                         </div>
                                       
-                                        <div className='card-bottom'>
+                                        {/* <div className='card-bottom'>
                                             <div className='Card-Text'>
                                                 <p>View More</p>
                                             </div>
@@ -336,16 +339,16 @@ const OurActivityComponet = () => {
                                             <div className='right-icon'>
                                                 <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
                                              </div>
+                                        </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </SwiperSlide>
 
-                <span className="marquee-wapper">
+                {/* <span className="marquee-wapper">
                     <MarqueeShare/>
-                </span>
+                </span> */}
                 </Swiper>
             </div>
             </div>

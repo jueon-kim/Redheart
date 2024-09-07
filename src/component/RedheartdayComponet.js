@@ -7,26 +7,20 @@ import '../css/RedheartdayComponet.css';
 // 테블릿 모바일
 import '../MQuery/MediaQueryTablet.css';
 const RedheartdayComponet = () => {
-    const [size, setSize] = useState({ width: 560}); // 초기 크기
+    const [size, setSize] = useState({ width: 360}); // 초기 크기
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const windowWidth = window.innerWidth;
 
-            let baseSize = { width: 560, height: 320 };
-            let maxSize = { width: 1920, height: 1080 };
+            let baseSize = { width: 150, height: 320 };
+            let maxSize = { width: 360, height: 520 };
 
             // 뷰포트 크기에 따른 최대 크기 설정
             if (windowWidth <= 360) {
-                baseSize = { width: 320, height: 480 }; // 모바일 초기 크기
-                maxSize = { width: 360, height: 1080}; // 모바일 최대 크기
-            } else if (windowWidth <= 768) {
-                baseSize = { width: 540, height: 720 }; // 태블릿 초기 크기
-                maxSize = { width: 768, height: 1080 }; // 태블릿 최대 크기
-            } else {
-                baseSize = { width: 560, height: 720 }; // 데스크탑 초기 크기
-                maxSize = { width: 1920, height: 1080 }; // 데스크탑 최대 크기
+                baseSize = { width: 280, height: 280 }; // 모바일 초기 크기
+                maxSize = { width: 360, height: 320}; // 모바일 최대 크기
             }
 
             // 스크롤에 따라 크기 조정
@@ -70,11 +64,10 @@ const RedheartdayComponet = () => {
                         ></iframe>
                 </div>
 
-                <div>
+                {/* <div>
                     <MarqueeComponent type="loveGiveExpand" />
-                </div>
-            </div>
-        </>
+                </div> */}
+            </div>        </>
     );
 };
 

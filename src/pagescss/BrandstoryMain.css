@@ -1,51 +1,45 @@
-/* 전체 컨테이너 */
-.Brandstory-video {
-    position: relative; /* 자식 요소들을 기준으로 위치를 설정 */
-    width: 100vw; /* 전체 너비 */
-    height: 100vh; /* 전체 높이 */
-    overflow: hidden; /* 비디오가 넘치는 부분 숨기기 */
+.text-section{
+    align-items: center;
+    height: 300rem;
 }
 
-/* 비디오 래퍼 */
-.video-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-/* 비디오 스타일 */
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; /* 비디오 너비 */
-    height: 100vh; /* 비디오 높이 */
-    object-fit: cover; /* 화면을 덮도록 비디오 크기 조정 */
-    z-index: -1; /* 비디오를 콘텐츠 뒤로 이동 */
-}
-
-/* 텍스트 섹션 스타일 */
-.text-section {
-    position: relative; /* 비디오 위에 위치하도록 설정 */
-    color: white; /* 텍스트 색상 조정 */
-    padding: 20px; /* 여백 조정 */
-    text-align: center; /* 텍스트 정렬 */
-    /* 필요에 따라 높이 조정 */
-    max-height: 100rem; /* 화면 높이를 넘지 않도록 설정 */
-    overflow-y: auto; /* 필요시 스크롤이 가능하도록 설정 */
-}
-
-
-
-
-.second-video-section video {
-    width: 90%;
-    border-radius: 10px;
-    margin: 0 auto;
+.swiper-center{
     display: block;
+    align-content: center;
+    text-align: center;
+
 }
+
+.Brandstory-bg-img1, .Brandstory-bg-img2, 
+.Brandstory-bg-img3, .Brandstory-bg-img4,
+.Brandstory-bg-img5, .Brandstory-bg-img6{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+
+}
+
+.Brandstory-bg-img1{
+    background-image: url('/public/brandImg/Brandstory-bg1.jpg');
+
+}
+.Brandstory-bg-img2{
+    background-image: url('/public/brandImg/Brandstory-bg2.png');
+}
+.Brandstory-bg-img3{
+    background-image: url('/public/brandImg/Brandstory-bg3.png');
+}
+.Brandstory-bg-img4{
+    background-image: url('/public/brandImg/Brandstory-bg4.png');
+}
+.Brandstory-bg-img5{
+    background-image: url('/public/brandImg/Brandstory-bg5.png');
+}
+
+.Brandstory-bg-img6{
+    background-image: url('/public/brandImg/Brandstory-bg5.png');
+}
+
 
 .brandstory-component, .dresscode-wrapper, .ouractivity-bg-color {
     position: relative;
@@ -80,31 +74,6 @@
     object-fit: cover;
 }
 
-/* 추가 스타일 */
-
-
-.text-section {
-    /* position: absolute; */
-    text-align: center;
-    background: rgb(0, 0, 0, 0.5);
-}
-
-
-/* 기타 스타일 */
-.brandstory-wrapper {
-    position: relative;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-.brandstory-img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-
 
 .brandstory-componet {
     position: relative;
@@ -131,16 +100,7 @@
     overflow: hidden;
 }
 
-/* 텍스트 스타일 */
-.BrandStoryMain-Text  {
-    font-size: 5.5vw;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0;
-    height: 100rem;
-    color: white;
-    overflow: hidden;
-}
+
 
 /* 반응형 이미지 스타일 */
 .brandstory-gallery-img {
@@ -180,10 +140,12 @@
     color: #FFFFFF;
 }
 
-.dresscode-wapper {
+.dresscode-wrapper, .ouractivity-bg-color {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 120px 0px;
+    width: 100vw;
 }
 
 .dresscode-componet {
@@ -213,12 +175,12 @@
     margin-left: 5.5px;
 }
 
-.gallery-text-componet {
+.gallery-text-component{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0px 120px;
-    gap: 26px;
+    text-align: center;
+    padding: 120px 0px;
 }
 
 .gallery-text-small {
@@ -245,7 +207,7 @@
 .Brandstory-Gallery-Group {
     display: flex;
     flex-direction: column;
-    padding: 120px 0px;
+    padding: 60px 0;
 }
 
 .Brandstory-Gallery-Center {

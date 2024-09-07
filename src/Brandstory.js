@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';  
 import AOS from 'aos';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, Mousewheel, } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 import 'aos/dist/aos.css';
 import 'swiper/css';
@@ -11,71 +15,65 @@ import 'swiper/css/navigation';
 import './pagescss/BrandstoryMain.css';
 
 const Brandstory = () => {
-    useEffect(() => {
-        AOS.init({
-            offset: 200, // 애니메이션 시작 오프셋
-            duration: 1000, // 애니메이션 지속 시간
-            once: true, // 한번만 애니메이션 실행
-        });
-        AOS.refresh(); // 새로 추가된 DOM 요소들에 대해 AOS 재적용
-    }, []);
-
     return ( 
-        <> 
-        <div className='Brandstory-video'> 
 
-         <div className='video-wrapper'>
-                <div className='video-component'>
-                    <video muted autoPlay
-                           src={process.env.PUBLIC_URL + '/video/Brandstory-main.mp4'}
-                           className='background-video' 
-                           style={{
-                               width: '100vw',
-                               height: '100vh',
-                               objectFit: 'cover',
-                               position: 'absolute',
-                               top: 0,
-                               left: 0,
-                            }}>
-                    </video> 
-       
-
-            <div className='text-section'>
-                    <div data-aos="fade-up" className='BrandStoryMain-Text'>
+        <>
+    <div style={{ maxWidth:'360px', maxHeight: '100vh' }}>
+        <div>
+            <Swiper
+                direction={'vertical'}
+                slidesPerView={1}
+                spaceBetween={30}
+                mousewheel={true}
+                pagination={{
+                clickable: true,
+                }}
+                modules={[Mousewheel, Pagination]}
+                className="mySwiper" style={{  height:'520px', width: '100vw'}}
+            >
+                <SwiperSlide>
+                    <div className="swiper-center Brandstory-bg-img1">
                         <p>RedHeartDay는 나의 따뜻한</p>
                         <p>마음을 나타내며 전하는</p>
+                     </div>
+                </SwiperSlide>
+                
+                <SwiperSlide>
+                <div className="swiper-center Brandstory-bg-img2"> 
+                    <p>RedHeartDay는 나의 따뜻한</p>                    
+                    <p>'나눔의 날' + '나눔 운동' 입니다</p>
                     </div>
-                    
-                    <div data-aos="fade-up" className='BrandStoryMain-Text'>
-                        <p>RedHeartDay는 나의 따뜻한</p>                    
-                        <p>'나눔의 날' + '나눔 운동' 입니다</p>
-                    </div>
+                </SwiperSlide>
 
-                    <div data-aos="fade-up" className='BrandStoryMain-Text'>
-                        <p data-aos="fade-up">'혼자'가 아닌 '우리의 시작 </p> 
-                        <p>바로 '나눔'에서 시작됩니다</p>
+                <SwiperSlide>  
+                <div className="swiper-center Brandstory-bg-img3">
+                    <p>'혼자'가 아닌 '우리의 시작 </p> 
+                    <p>바로 '나눔'에서 시작됩니다</p>
                     </div>
+                </SwiperSlide>
 
-                    <div data-aos="fade-up" className='BrandStoryMain-Text'>                    
-                        <p>나눔으로 웃음과 기쁨이</p>                        
-                        <p>두 배가 되는 축제의 날</p>
+                <SwiperSlide>  
+                <div className="swiper-center Brandstory-bg-img4">
+                    <p>나눔으로 웃음과 기쁨이</p>                        
+                    <p>두 배가 되는 축제의 날</p>
                     </div>
-
-                    <div data-aos="fade-up" className='BrandStoryMain-Text'> 
-                        <p>내가 가진 두 개 중</p> 
-                        <p>하나를 나누면 되니까요</p>
+                </SwiperSlide>
+                
+                <SwiperSlide>
+                <div className="swiper-center Brandstory-bg-img5">
+                    <p>내가 가진 두 개 중</p> 
+                    <p>하나를 나누면 되니까요</p>
                     </div>
-
-                    <div data-aos="fade-up" className='BrandStoryMain-Text'>
-                        <p>나눔을 통해 웃음과 기쁨이</p>
-                        <p>두 배가 되는 날</p>
-                    </div>            
+                </SwiperSlide>
+                
+                <SwiperSlide>   
+                <div className="swiper-center Brandstory-bg-img6"> 
+                    <p>나눔을 통해 웃음과 기쁨이</p>
+                    <p>두 배가 되는 날</p>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
             </div>
-
-            </div>
-            </div>
-
-         </div>
 
         <div className='second-video-section'>
             <div className='video-wrapper'>
@@ -94,7 +92,7 @@ const Brandstory = () => {
             </div>
         </div> 
 
-         <div className='brandstory-component'>
+         {/* <div className='brandstory-component'>
             <div className='brandstory-wrapper'>
                 <div className='brandstory-img'>
                     <img src={process.env.PUBLIC_URL + '/brandImg/Brandstory.jpg'} />
@@ -102,15 +100,16 @@ const Brandstory = () => {
                 <div className='brandstory-title-component'>
                     <div className='brandstory-sub-title'>
                         <p>I have two. I share one.</p>
-                    </div>
-                    <div className='brandstory-main-title'>
+                        <div className='brandstory-main-title'>
                         <p>당신의 레드하트로</p>
                         <p>세상을 따뜻하게 만들어 가세요</p>
                     </div>
+                    </div>
+                 
                 </div>
             </div>
-        </div> 
-
+        </div>  */}
+        
         <div className='dresscode-wrapper'>
             <div className='dresscode-component'>
                 <div className="dresscode-text">
@@ -125,14 +124,14 @@ const Brandstory = () => {
             <div className='Brandstory-swiper-wrapper'>
                 <Swiper
                     slidesPerView={4}
-                    spaceBetween={30}
+                    spaceBetween={20}
                     centeredSlides={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                    style={{height: '140px'}} className="mySwiper"
                 >
                     <SwiperSlide>
                         <img src={process.env.PUBLIC_URL + '/brandImg/BrandstorySwiper1.jpg'} className='swiper-img'></img>
@@ -188,7 +187,9 @@ const Brandstory = () => {
                     <img src={process.env.PUBLIC_URL + '/brandImg/BrandstoryBottom2.jpg'} className='brandstory-gallery-img' style={{ width: '25vw', height: '20vw'}}/>
                 </div>
             </div>
-        </div>
+        </div> 
+
+        </div> 
     </>
     );
 };

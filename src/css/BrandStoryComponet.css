@@ -1,12 +1,4 @@
 /* @import url('https://rsms.me/inter/inter.css'); */
-
-
-.BrandStory-360 {
-  position: relative;
-  width: 100vw;
-  height: 120vh; /* Canvas의 전체 높이 설정 */
-}
-
 .canvas-wrapper {
   position: absolute;
   top: 50%;
@@ -144,3 +136,25 @@ canvas {
   background: black
 }
 
+.hoTowjoin{
+  width: 100%;
+}
+
+.Dresscode-text-wapper{
+  width: 100%;
+}
+
+.Main-text{
+  font-size: 4vw;
+}
+.Sub-text{
+  font-size: 2vw;
+}
+
+
+.howtoJoin-text{
+  display: grid;
+  padding: 20px;
+  align-items: center;
+  text-align: left;
+}
