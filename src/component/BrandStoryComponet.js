@@ -1,23 +1,18 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-// import * as THREE from 'three';
-// import { Canvas, useFrame } from '@react-three/fiber';
-// import { Image, ScrollControls, useScroll, useTexture } from '@react-three/drei';
-// import { easing } from 'maath';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { CiCircleChevRight } from "react-icons/ci";
 
-import '../util';
 import '../css/Componet.css';
 import '../css/BrandStoryComponet.css';
 
 export const BrandStoryComponet = () => {
 
+
+  
   return (
     <>
     <div className='BrandstoryComponentWapper'>

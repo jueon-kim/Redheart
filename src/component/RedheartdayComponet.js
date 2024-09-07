@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import MarqueeComponent from './MarqueeComponet';
 import '../css/Componet.css';
 
 import '../css/RedheartdayComponet.css';

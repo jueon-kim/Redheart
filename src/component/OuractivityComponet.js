@@ -1,17 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-
-import useColorTransition from '../useColorTransition';
-import MarqueeShare from './MarqueeShareComponet';
-
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-
-
-import { FaChevronCircleRight } from "react-icons/fa";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,33 +19,6 @@ const OurActivityComponet = () => {
             duration: 3000,
             once: false, // 애니메이션이 한 번만 실행되도록 설정
         });
-    }, []);
-
-    // const { bgColor, textColor, ref } = useColorTransition();
-    const [isTransitioned, setIsTransitioned] = useState(false);
-    const openCardRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsTransitioned(true);
-                    }
-                });
-            },
-        );
-
-        if (openCardRef.current) {
-            observer.observe(openCardRef.current);
-        }
-
-        return () => {
-            if (openCardRef.current) {
-                observer.unobserve(openCardRef.current);
-            }
-        };
-
     }, []);
 
     return (
@@ -92,7 +57,6 @@ const OurActivityComponet = () => {
                           modules={[Pagination]}
                           className="mySwiper">
                     <SwiperSlide>
-                        <div className={`open-card ${isTransitioned ? 'transition' : ''}`} ref={openCardRef}>
                             <div className="open-card">
                                 <div className="card">
 
@@ -128,30 +92,14 @@ const OurActivityComponet = () => {
                                                     </p>
                                       </div>
                                    
-                                      
-                                 
-
-                                       
                                     </div>
 
-                                    {/* <div className='card-bottom'>
-                                            <div className='Card-Text'>
-                                                <p> <Link to='/Redheartday' className="Ouractivity-Text">View More</Link></p>
-                                            </div>
-
-                                            <div className='right-icon'>
-                                            <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
-                                            </div>
-                                        </div> */}
-                                       
                                         </div>
                                 </div>
-                            </div>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className={`open-card ${isTransitioned ? 'transition' : ''}`}>
                             <div className="open-card">
                                 
                                 <div className="card">
@@ -182,26 +130,13 @@ const OurActivityComponet = () => {
                                    
                                 
                                         </div>
-{/* 
-                                        <div className='card-bottom'>
-                                            <div className='Card-Text'>
-                                                <p> <Link to='/Eduction' className="Ouractivity-Text">View More</Link></p>
-                                            </div>
 
-                                            <div className='right-icon'>
-                                            <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
-
-                                            </div>
-                                        </div> */}
-
-                                    </div>
-                                </div>
+                                </div>         
                             </div>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className={`open-card ${isTransitioned ? 'transition' : ''}`}>
                             <div className="open-card">
                                 <div className="card">
                                     <img
@@ -232,24 +167,12 @@ const OurActivityComponet = () => {
                                         </div>
                                       
                                         </div>
-                                        {/* <div className='card-bottom'>
-                                            <div className='Card-Text'>
-                                                <p>  <Link to='/Dailyredheartday' className='Ouractivity-Text'>view More</Link></p>
-                                            </div>
-
-                                            <div className='right-icon'>
-                                            <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
-                                            </div>
-                                        </div> */}
-                                       
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                         <div className={`open-card ${isTransitioned ? 'transition' : ''}`}>
                             <div className="open-card">
                                 <div className="card">
                                     <img
@@ -282,25 +205,14 @@ const OurActivityComponet = () => {
                                       
                                      
                                         </div>
-                                        {/* <div className='card-bottom'>
-                                            <div className='Card-Text'>
-                                                <p> <Link to='/Ouractivity' className="Ouractivity-Text">View More</Link></p>
-                                            </div>
-
-                                            <div className='right-icon'>
-                                            <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
-                                            </div>
-                                        </div> */}
                                         </div>
 
                                      
-                                </div>
                             </div>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide >
-                        <div className={`open-card ${isTransitioned ? 'transition' : ''}`}>
                             <div className="open-card">
                                 <div className="card">
 
@@ -331,24 +243,11 @@ const OurActivityComponet = () => {
                                       
                                         </div>
                                       
-                                        {/* <div className='card-bottom'>
-                                            <div className='Card-Text'>
-                                                <p>View More</p>
-                                            </div>
-
-                                            <div className='right-icon'>
-                                                <FaChevronCircleRight className='right-cion' color='#DDDDDD' />
-                                             </div>
-                                        </div> */}
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                     </SwiperSlide>
 
-                {/* <span className="marquee-wapper">
-                    <MarqueeShare/>
-                </span> */}
                 </Swiper>
             </div>
             </div>
