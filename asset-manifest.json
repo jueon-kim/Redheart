@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e17e545c.css",
+    "main.js": "/static/js/main.d7ba8358.js",
+    "static/media/brandStoryMainimg.jpg": "/static/media/brandStoryMainimg.e307e6e8230ed6fac844.jpg",
+    "static/media/SB 어그로 M.ttf": "/static/media/SB 어그로 M.ba7f85d311382e806808.ttf",
+    "index.html": "/index.html",
+    "main.e17e545c.css.map": "/static/css/main.e17e545c.css.map",
+    "main.d7ba8358.js.map": "/static/js/main.d7ba8358.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e17e545c.css",
+    "static/js/main.d7ba8358.js"
+  ]
+}
