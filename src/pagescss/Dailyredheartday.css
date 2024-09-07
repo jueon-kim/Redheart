@@ -108,7 +108,7 @@
 }
 /* AOS Fade효과 */
 .daily-aos{
-    background-image: url('../../public/fadeinoutimg/Dailyredheart1.jpg');
+    /* background-image: url('../../public/fadeinoutimg/Dailyredheart1.jpg'); */
     background-size: cover; /* 'contain' 대신 'cover' 사용 */
     background-repeat: no-repeat;
     background-attachment: fixed; /* 배경 이미지 고정 */
