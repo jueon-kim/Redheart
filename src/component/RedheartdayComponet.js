@@ -63,9 +63,6 @@ const RedheartdayComponet = () => {
                         ></iframe>
                 </div>
 
-                {/* <div>
-                    <MarqueeComponent type="loveGiveExpand" />
-                </div> */}
             </div>        </>
     );
 };

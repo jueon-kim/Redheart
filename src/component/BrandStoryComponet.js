@@ -29,15 +29,6 @@ export const BrandStoryComponet = () => {
             <p>Your REDHEART makes the world more beautiful.</p>
           </div>
 
-          {/* View More 버튼 */}
-          {/* <div className="view-More-Page">
-            <Link to='/Brandstory' className="view-more" style={{ textDecoration: "none" }}>
-              View More
-              <div className='right-icon'>
-                <CiCircleChevRight className='right-cion' />
-              </div>
-            </Link>
-          </div> */}
         </div> 
       </div>
 
